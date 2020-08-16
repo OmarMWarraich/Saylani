@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- 5.script -->
+    <!-- <script>
+        var clicks = 0;
+       function myFunction() {
+   
+           clicks += 1;
+           document.getElementById("demo").innerHTML = clicks;
+       }
+       function myFunction2() {
+            clicks -= 1;
+            document.getElementById("demo").innerHTML = clicks;
+}
+       
+   </script>     -->
+   <!-- <SCRIPT language="javascript">
+    function addRow(tableID) {
+
+        var table = document.getElementById(tableID);
+
+        var rowCount = table.rows.length;
+        var row = table.insertRow(rowCount);
+
+        var cell1 = row.insertCell(0);
+        var element1 = document.createElement("input");
+        element1.type = "checkbox";
+        element1.name="chkbox[]";
+        cell1.appendChild(element1);
+
+        var cell2 = row.insertCell(1);
+        cell2.innerHTML = rowCount + 1;
+
+        var cell3 = row.insertCell(2);
+        var element2 = document.createElement("input");
+        element2.type = "text";
+        element2.name = "txtbox[]";
+        cell3.appendChild(element2);
+
+
+    }
+
+    function deleteRow(tableID) {
+        try {
+        var table = document.getElementById(tableID);
+        var rowCount = table.rows.length;
+
+        for(var i=0; i<rowCount; i++) {
+            var row = table.rows[i];
+            var chkbox = row.cells[0].childNodes[0];
+            if(null != chkbox && true == chkbox.checked) {
+                table.deleteRow(i);
+                rowCount--;
+                i--;
+            }
+
+
+        }
+        }catch(e) {
+            alert(e);
+        }
+    }
+
+</SCRIPT> -->
+   
+    
+</head>
+<body>
+    
+    <!-- <div class="mail">
+    <h2>Input Password and Submit [7 to 15 characters which contain only characters, numeric digits, underscore and first character must be a letter]</h2>
+    <form name="form1" action="#">
+    <ul>
+    <li><input type='text' name='text1'/></li>
+    <li class="rq">*Enter numbers only.</li>
+    <li>&nbsp;</li>
+    <li class="submit"><input type="submit" name="submit" value="Submit" onclick="CheckPassword(document.form1.text1)"/></li>
+    <li>&nbsp;</li>
+    </ul>
+    </form>
+    </div>
+    <script src="check-password-1.js"></script> -->
+
+
+    <!-- Ch. 43-48-Events
+    1. -->
+    <!-- <script type="text/javascript">
+        function AlertIt() {
+        var answer = confirm ("Please click on OK to continue.")
+        if (answer)
+        window.location="http://www.continue.com";
+        }
+        </script>
+        
+        <a href="javascript:AlertIt();">click me</a> -->
+    
+        <!-- 2. -->
+
+    <!-- <div>
+        <script type="text/javascript">
+            function AlertIt() {
+                alert("Samasung Galaxy")
+            
+            }
+            </script>
+            
+           
+         
+        <a href="javascript:AlertIt();"><img src="..//js 21-38/mobile images/amir-hanna-sweUF7FcyP4-unsplash.jpg" height = 200 weight = 200 alt=""></a>
+        <img src="..//js 21-38/mobile images/daniel-korpai-tE_kGhscUTU-unsplash.jpg" height = 200 weight = 200 alt="">
+        <img src="..//js 21-38/mobile images/dugba-cauley-hushie-6MNmDi1hc_Y-unsplash.jpg" height = 200 weight = 200 alt="">
+        <img src="..//js 21-38/mobile images/rahul-chakraborty-xsGxhtAsfSA-unsplash.jpg" height = 200 weight = 200 alt="">
+
+    </div> -->
+
+    <!-- 3. -->
+<!-- Display 10 student records in table and each row should contain a delete
+button. If you click on a button to delete a record, entire row should be
+deleted. -->
+
+
+<!-- <script>
+    function SomeDeleteRowFunction(o) {
+     //no clue what to put here?
+     var p=o.parentNode.parentNode;
+         p.parentNode.removeChild(p);
+    }
+    </script>
+
+<table>
+<tr>
+    <th>Index</th>
+    <th>Name</th>
+    <th>Class</th>
+    
+</tr>
+<tr>
+    <td>0</td>
+    <td>Omar</td>
+    <td>10</td>
+    <td><input type="button" value="Delete Row" onclick="SomeDeleteRowFunction(this)"></td>
+</tr>
+<tr>
+    <td>1</td>
+    <td>Ali</td>
+    <td>10</td>
+    <td><input type="button" value="Delete Row" onclick="SomeDeleteRowFunction(this)"></td>
+</tr>
+<tr>
+    <td>2</td>
+    <td>Smar</td>
+    <td>4</td>
+    <td><input type="button" value="Delete Row" onclick="SomeDeleteRowFunction(this)"></td>
+</tr>
+<tr>
+    <td>3</td>
+    <td>Nsar</td>
+    <td>3</td>
+    <td><input type="button" value="Delete Row" onclick="SomeDeleteRowFunction(this)"></td>
+</tr>
+<tr>
+    <td>4</td>
+    <td>Zulqarnain</td>
+    <td>0</td>
+    <td><input type="button" value="Delete Row" onclick="SomeDeleteRowFunction(this)"></td>
+</tr>
+<tr>
+    <td>5</td>
+    <td>Umair</td>
+    <td>10</td>
+    <td><input type="button" value="Delete Row" onclick="SomeDeleteRowFunction(this)"></td>
+</tr>
+<tr>
+    <td>6</td>
+    <td>Asad</td>
+    <td>9</td>
+    <td><input type="button" value="Delete Row" onclick="SomeDeleteRowFunction(this)"></td>
+</tr>
+<tr>
+    <td>7</td>
+    <td>Atif</td>
+    <td>8</td>
+    <td><input type="button" value="Delete Row" onclick="SomeDeleteRowFunction(this)"></td>
+</tr>
+<tr>
+    <td>8</td>
+    <td>Sarfraz</td>
+    <td>9</td>
+    <td><input type="button" value="Delete Row" onclick="SomeDeleteRowFunction(this)"></td>
+</tr>
+<tr>
+    <td>9</td>
+    <td>Kashif</td>
+    <td>5</td>
+    <td><input type="button" value="Delete Row" onclick="SomeDeleteRowFunction(this)"></td>
+</tr>
+
+</table> -->
+
+<!-- 4.  -->
+
+<!-- Display an image in browser. Change the picture on mouseover and set the first picture on mouseout. -->
+
+<!-- <a href="" onMouseOver="document.MyImage.src='http://icons.iconarchive.com/icons/uiconstock/round-edge-social/72/ask-icon.png';" onMouseOut="document.MyImage.src='http://icons.iconarchive.com/icons/uiconstock/round-edge-social/72/arto-icon.png';">
+    <img src="http://icons.iconarchive.com/icons/uiconstock/round-edge-social/72/arto-icon.png" name="MyImage"> -->
+
+<!-- 5 -->
+
+<!-- Show a counter in browser. Counter should increase on click on increase button and decrease on click on decrease button. And show updated counter value in browser. -->
+<!-- 
+<p>Click the button to trigger a function.</p>
+
+<button onclick="myFunction()">Increase</button>
+<button onclick="myFunction2()">Decrease</button>
+
+<p id="demo"></p> -->
+
+<!-- ch. 49-52 -->
+
+<!-- 1. Create a signup form and display form data in your web page on submission. -->
+
+<!-- <form action="action_page.php" style="border:1px solid #ccc">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+  
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+  
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+  
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+  
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+  
+      <div class="clearfix">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>  -->
+
+
+   <!-- Button to open the modal -->
+<!-- <button onclick="document.getElementById('id01').style.display='block'">Sign Up</button> -->
+
+<!-- The Modal (contains the Sign Up form) -->
+<!-- <div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signup">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>  -->
+
+<!-- <script> -->
+    <!-- // Get the modal
+    // var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    // window.onclick = function(event) {
+    //     if (event.target == modal) {
+    //         modal.style.display = "none";
+    //     }
+    // }
+    // </script> 
+ -->
+
+ <!-- 2. Suppose in your webpage there is content area in which you have entered your item details, but user can only see
+ some details on first look. When user clicks on “Readmore” button, full detail of that particular item will be displayed. -->
+ <!-- <p id="slowLoris">
+    Slow lorises are a group of several species of strepsirrhine primates which make up the genus Nycticebus.
+    <a href="javascript:void(0);" onClick="expandLoris();"><em>Click for more.</em></a>
+    </p> -->
+
+    
+<!-- 3. -->
+
+
+
+	<!-- <INPUT type="button" value="Add Row" onclick="addRow('dataTable')" />
+
+	<INPUT type="button" value="Delete Row" onclick="deleteRow('dataTable')" />
+
+	<TABLE id="dataTable" width="350px" border="1">
+		<TR>
+			<TD><INPUT type="checkbox" name="chk"/></TD>
+			<TD> 1 </TD>
+			<TD> <INPUT type="text" /> </TD>
+		</TR>
+	</TABLE> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
